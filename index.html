@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Интерактивная карта маршрута</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<div id="sidebar">
+    <!-- Контейнер для информации о маршрутах -->
+    <div id="routes-info"></div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZmFsc2RmYXNkZiIsImEiOiJjbHp6emYyNTMxMWE2MnJyMmhoaWJ1M3g5In0.LHXcS21v9hGIpAW1YRWqbQ'; // Ваш API ключ
+
+    const map = new mapboxgl.Map({
+        container: 'map', // id элемента для отображения карты
+        style: 'mapbox://styles/mapbox/streets-v12', // стиль карты
+        center: [20.0, 50.0], // начальный центр карты [долгота, широта]
+        zoom: 2, // начальный зум карты
+        projection: 'mercator', // установка плоской проекции карты
+    });
+
+    let activeRouteIndex = null; // Переменная для отслеживания выбранного маршрута
+    let activeCard = null; // Переменная для отслеживания открытой карточки
+    let markers = []; // Переменная для хранения маркеров на карте
+
+    // Функция для закрытия всех карточек
+    function closeAllCards() {
+        const allCards = document.querySelectorAll('.route-info-block');
+        allCards.forEach(card => {
+            card.classList.remove('is-opened');
+        });
+    }
+
+    // Функция для удаления всех маркеров с карты
+    function removeMarkers() {
+        markers.forEach(marker => marker.remove());
+        markers = [];
+    }
+
+    // Функция для открытия модального окна с информацией
+    function openModal(content) {
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `<div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <p>${content}</p>
+        </div>`;
+        document.body.appendChild(modal);
+
+        // Закрыть модалку при клике на крестик
+        modal.querySelector('.modal-close').addEventListener('click', () => {
+            document.body.removeChild(modal);
+        });
+
+        // Закрыть модалку при клике за пределы контента
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                document.body.removeChild(modal);
+            }
+        });
+    }
+
+    // Загрузка данных из JSON файла
+    fetch('routeData.json')
+        .then(response => response.json())
+        .then(routeDataArray => {
+            const routesInfoContainer = document.getElementById('routes-info');
+
+            // Для каждого маршрута создаем свой блок и слой
+            routeDataArray.forEach((geojsonData, index) => {
+                const defaultColor = '#BDBDBD';
+                const activeColor = '#790200';
+
+                // Создаем уникальный блок для каждого маршрута
+                const routeInfoBlock = document.createElement('div');
+                routeInfoBlock.classList.add('route-info-block');
+
+                // Создаем картинку
+                if (geojsonData.routeInfo.featuredImage) {
+                    const routeImg = document.createElement('img');
+                    routeImg.src = geojsonData.routeInfo.featuredImage;
+                    routeImg.classList.add('route-info-img');
+                    routeInfoBlock.appendChild(routeImg);
+
+                    // Добавляем обработчик клика на изображение для открытия/закрытия
+                    routeImg.addEventListener('click', () => {
+                        handleCardToggle(routeInfoBlock, index);
+                    });
+                }
+
+                // Заголовок и описание
+                const titleWrapper = document.createElement('div');
+                titleWrapper.innerHTML = `<div class="route-info-title-wrapper">
+<h3 class="route-info-title">${geojsonData.routeInfo.title}</h3>
+<svg width="24" height="24" class="route-info-title-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9999 17.8132C11.5499 17.8132 11.1269 17.6352 10.8109 17.3132L1.0249 7.31623L1.9749 6.38623L11.7599 16.3822C11.8899 16.5132 12.1089 16.5142 12.2399 16.3812L22.0239 6.38623L22.9749 7.31623L13.1899 17.3122C12.8729 17.6362 12.4499 17.8132 11.9999 17.8132Z" fill="#790200"/>
+</svg>
+</div>`;
+
+                const routeDescription = document.createElement('div');
+                routeDescription.classList.add('route-info-description');
+                routeDescription.innerHTML = `<p>${geojsonData.routeInfo.description}</p>`;
+
+                routeInfoBlock.appendChild(titleWrapper);
+                routeInfoBlock.appendChild(routeDescription);
+                routesInfoContainer.appendChild(routeInfoBlock);
+
+                // Добавляем обработчик клика на заголовок для открытия/закрытия
+                titleWrapper.addEventListener('click', () => {
+                    handleCardToggle(routeInfoBlock, index);
+                });
+
+                // Добавляем маршрут на карту
+                map.on('load', () => {
+                    map.addSource(`route-${index}`, {
+                        type: 'geojson',
+                        data: geojsonData,
+                    });
+
+                    map.addLayer({
+                        id: `route-${index}`,
+                        type: 'line',
+                        source: `route-${index}`,
+                        filter: ['==', '$type', 'LineString'], // Только линии
+                        layout: {
+                            'line-join': 'round',
+                            'line-cap': 'round',
+                        },
+                        paint: {
+                            'line-color': defaultColor, // Черный по умолчанию
+                            'line-width': 4,
+                            'line-opacity': 0.8,
+                        },
+                    });
+                });
+
+                // Функция для обработки кликов и открытия/закрытия карточек
+                function handleCardToggle(routeInfoBlock, index) {
+                    // Закрываем предыдущую карточку и удаляем точки
+                    if (activeCard && activeCard !== routeInfoBlock) {
+                        activeCard.classList.remove('is-opened');
+                        map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', defaultColor);
+                        removeMarkers(); // Удаляем точки предыдущего маршрута
+                    }
+
+                    // Открываем текущую карточку и меняем цвет линии
+                    if (routeInfoBlock === activeCard) {
+                        routeInfoBlock.classList.remove('is-opened');
+                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
+                        removeMarkers(); // Удаляем точки, если карточка закрывается
+                        activeCard = null;
+                        activeRouteIndex = null;
+                    } else {
+                        routeInfoBlock.classList.add('is-opened');
+                        map.setPaintProperty(`route-${index}`, 'line-color', activeColor);
+                        addMarkers(geojsonData.features); // Добавляем точки для выбранного маршрута
+                        activeCard = routeInfoBlock;
+                        activeRouteIndex = index;
+                    }
+                }
+
+                // Функция для добавления точек на карту
+                function addMarkers(features) {
+                    features.forEach(function (feature) {
+                        if (feature.geometry.type === 'Point') {
+                            const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+                                `${feature.properties.city}: ${feature.properties.event}`
+                            );
+
+                            const marker = new mapboxgl.Marker()
+                                .setLngLat(feature.geometry.coordinates)
+                                .setPopup(popup)
+                                .addTo(map);
+
+                            // Добавляем обработчик клика на маркер для вызова модалки
+                            marker.getElement().addEventListener('click', () => {
+                                openModal(`${feature.properties.city}: ${feature.properties.event}`);
+                            });
+
+                            markers.push(marker); // Сохраняем маркер для последующего удаления
+                        }
+                    });
+                }
+            });
+        });
+</script>
+
+<!-- Модальное окно стили -->
+<style>
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer
+
+</body>
+</html>
