@@ -49,8 +49,8 @@
             const routesInfoContainer = document.getElementById('routes-info');
 
             routeDataArray.forEach((geojsonData, index) => {
-                const defaultColor = '#BDBDBD';
-                const activeColor = '#1C1C1C';
+                const defaultColor = '#777777';
+                const activeColor = '#4e1512';
 
                 const routeInfoBlock = document.createElement('div');
                 routeInfoBlock.classList.add('route-info-block');
@@ -175,7 +175,7 @@
                     const el = document.createElement('div');
                     el.style.width = '25px';
                     el.style.height = '25px';
-                    el.style.borderRadius = '50%';
+                    el.style.borderRadius = '30%';
                     el.style.backgroundColor = '#4e1512';
                     el.style.boxShadow = '0px 0px 0px 10px rgba(78, 21, 18, 0.5)';
                     return el;
