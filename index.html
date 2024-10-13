@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Интерактивная карта маршрута</title>
@@ -16,24 +16,21 @@
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZmFsc2RmYXNkZiIsImEiOiJjbHp6emYyNTMxMWE2MnJyMmhoaWJ1M3g5In0.LHXcS21v9hGIpAW1YRWqbQ'; 
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYm95a296YXVydXMiLCJhIjoiY2x6cHc2dXhpMTF4ZjJxcjd2Z2M2YnhsaiJ9.I8vl4u3DW2avIaCyQqaUPg';
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/boykozaurus/cm02lnizi007e01r64giudtmj',
         center: [20.0, 50.0],
         zoom: 2,
-        projection: 'mercator',
     });
 
-    // Disable zoom on scroll
     map.scrollZoom.disable();
 
     let activeRouteIndex = null;
     let activeCard = null;
     let markers = [];
 
-    // Function to close all cards
     function closeAllCards() {
         const allCards = document.querySelectorAll('.route-info-block');
         allCards.forEach(card => {
@@ -41,13 +38,11 @@
         });
     }
 
-    // Function to remove all markers from the map
     function removeMarkers() {
         markers.forEach(marker => marker.remove());
         markers = [];
     }
 
-    // Load route data
     fetch('routeData.json')
         .then(response => response.json())
         .then(routeDataArray => {
@@ -55,7 +50,7 @@
 
             routeDataArray.forEach((geojsonData, index) => {
                 const defaultColor = '#BDBDBD';
-                const activeColor = '#790200';
+                const activeColor = '#1C1C1C';
 
                 const routeInfoBlock = document.createElement('div');
                 routeInfoBlock.classList.add('route-info-block');
@@ -72,11 +67,12 @@
                 }
 
                 const titleWrapper = document.createElement('div');
-                titleWrapper.innerHTML = `
-                    <div class="route-info-title-wrapper">
-                        <h3 class="route-info-title">${geojsonData.routeInfo.title}</h3>
-                    </div>
-                `;
+                titleWrapper.innerHTML = `<div class="route-info-title-wrapper">
+                    <h3 class="route-info-title">${geojsonData.routeInfo.title}</h3>
+                    <svg width="24" height="24" class="route-info-title-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9999 17.8132C11.5499 17.8132 11.1269 17.6352 10.8109 17.3132L1.0249 7.31623L1.9749 6.38623L11.7599 16.3822C11.8899 16.5132 12.1089 16.5142 12.2399 16.3812L22.0239 6.38623L22.9749 7.31623L13.1899 17.3122C12.8729 17.6362 12.4499 17.8132 11.9999 17.8132Z" fill="#790200"/>
+                    </svg>
+                </div>`;
 
                 const routeDescription = document.createElement('div');
                 routeDescription.classList.add('route-info-description');
@@ -108,20 +104,19 @@
                         paint: {
                             'line-color': defaultColor,
                             'line-width': 4,
-                            'line-opacity': 0.8,
+                            'line-opacity': 0.5,
                         },
                     });
-                });
 
-                // Automatically select the first card and route
-                if (index === 0) {
-                    handleCardToggle(routeInfoBlock, index);
-                }
+                    if (index === 0) {
+                        handleCardToggle(routeInfoBlock, index); // Открываем первую карточку по умолчанию
+                    }
+                });
 
                 function handleCardToggle(routeInfoBlock, index) {
                     if (activeCard && activeCard !== routeInfoBlock) {
                         activeCard.classList.remove('is-opened');
-                        map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', defaultColor);
+                        map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', activeColor);
                         removeMarkers();
                     }
 
@@ -133,12 +128,21 @@
                         activeRouteIndex = null;
                     } else {
                         routeInfoBlock.classList.add('is-opened');
-                        map.setPaintProperty(`route-${index}`, 'line-color', activeColor);
+                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
                         addMarkers(geojsonData.features);
-                        map.fitBounds(getRouteBounds(geojsonData), {
-                            padding: 50,
-                            maxZoom: 10,
+
+                        const bounds = new mapboxgl.LngLatBounds();
+                        geojsonData.features.forEach(function(feature) {
+                            if (feature.geometry.type === 'LineString') {
+                                feature.geometry.coordinates.forEach(coord => bounds.extend(coord));
+                            }
                         });
+
+                        map.fitBounds(bounds, {
+                            padding: 20,
+                            maxZoom: 14,
+                        });
+
                         activeCard = routeInfoBlock;
                         activeRouteIndex = index;
                     }
@@ -151,34 +155,35 @@
                                 `${feature.properties.city}: ${feature.properties.event}`
                             );
 
-                            const el = document.createElement('div');
-                            el.style.width = '25px';
-                            el.style.height = '25px';
-                            el.style.backgroundColor = '#4e1512';
-                            el.style.borderRadius = '50%';
-                            el.style.boxShadow = '0 0 5px rgba(78, 21, 18, 0.5)';
+                            const marker = new mapboxgl.Marker({
+                                element: createCustomMarker(),
+                            })
+                            .setLngLat(feature.geometry.coordinates)
+                            .setPopup(popup)
+                            .addTo(map);
 
-                            const marker = new mapboxgl.Marker({ element: el })
-                                .setLngLat(feature.geometry.coordinates)
-                                .setPopup(popup)
-                                .addTo(map);
+                            marker.getElement().addEventListener('click', () => {
+                                openModal(`${feature.properties.city}: ${feature.properties.event}`);
+                            });
 
                             markers.push(marker);
                         }
                     });
                 }
 
-                function getRouteBounds(geojsonData) {
-                    const bounds = new mapboxgl.LngLatBounds();
-                    geojsonData.features.forEach((feature) => {
-                        if (feature.geometry.coordinates) {
-                            bounds.extend(feature.geometry.coordinates);
-                        }
-                    });
-                    return bounds;
+                function createCustomMarker() {
+                    const el = document.createElement('div');
+                    el.style.width = '25px';
+                    el.style.height = '25px';
+                    el.style.borderRadius = '50%';
+                    el.style.backgroundColor = '#4e1512';
+                    el.style.boxShadow = '0px 0px 0px 10px rgba(78, 21, 18, 1)';
+                    return el;
                 }
             });
         });
 </script>
+
+</style>
 </body>
 </html>
