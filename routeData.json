@@ -14,7 +14,7 @@
           ]
         },
         "properties": {
-          "routeId": "route-1"
+          "routeId": "route-2"
         }
       },
       {
@@ -84,7 +84,7 @@
           ]
         },
         "properties": {
-          "routeId": "route-2"
+          "routeId": "route-1"
         }
       },
       {
