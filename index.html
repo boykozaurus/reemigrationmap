@@ -17,16 +17,17 @@
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZmFsc2RmYXNkZiIsImEiOiJjbHp6emYyNTMxMWE2MnJyMmhoaWJ1M3g5In0.LHXcS21v9hGIpAW1YRWqbQ'; // Ваш API ключ
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYm95a296YXVydXMiLCJhIjoiY2x6cHc2dXhpMTF4ZjJxcjd2Z2M2YnhsaiJ9.I8vl4u3DW2avIaCyQqaUPg'; // Ваш API ключ
 
     const map = new mapboxgl.Map({
         container: 'map', // id элемента для отображения карты
         style: 'mapbox://styles/boykozaurus/cm02lnizi007e01r64giudtmj', // стиль карты
         center: [20.0, 50.0], // начальный центр карты [долгота, широта]
         zoom: 2, // начальный зум карты
-        projection: 'mercator', // установка плоской проекции карты
     });
-        
+
+        map.scrollZoom.disable();
+
     let activeRouteIndex = null; // Переменная для отслеживания выбранного маршрута
     let activeCard = null; // Переменная для отслеживания открытой карточки
     let markers = []; // Переменная для хранения маркеров на карте
