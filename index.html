@@ -116,19 +116,19 @@
                 function handleCardToggle(routeInfoBlock, index) {
                     if (activeCard && activeCard !== routeInfoBlock) {
                         activeCard.classList.remove('is-opened');
-                        map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', activeColor);
+                        map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', defaultColor); // Сбрасываем цвет предыдущего маршрута
                         removeMarkers();
                     }
 
                     if (routeInfoBlock === activeCard) {
                         routeInfoBlock.classList.remove('is-opened');
-                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
+                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor); // Сбрасываем цвет текущего маршрута
                         removeMarkers();
                         activeCard = null;
                         activeRouteIndex = null;
                     } else {
                         routeInfoBlock.classList.add('is-opened');
-                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
+                        map.setPaintProperty(`route-${index}`, 'line-color', activeColor); // Устанавливаем цвет активного маршрута
                         addMarkers(geojsonData.features);
 
                         const bounds = new mapboxgl.LngLatBounds();
