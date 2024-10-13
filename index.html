@@ -9,7 +9,6 @@
 </head>
 <body>
 <div id="sidebar">
-    <!-- Контейнер для информации о маршрутах -->
     <div id="routes-info"></div>
 </div>
 
@@ -17,22 +16,21 @@
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYm95a296YXVydXMiLCJhIjoiY2x6cHc2dXhpMTF4ZjJxcjd2Z2M2YnhsaiJ9.I8vl4u3DW2avIaCyQqaUPg'; // Ваш API ключ
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYm95a296YXVydXMiLCJhIjoiY2x6cHc2dXhpMTF4ZjJxcjd2Z2M2YnhsaiJ9.I8vl4u3DW2avIaCyQqaUPg';
 
     const map = new mapboxgl.Map({
-        container: 'map', // id элемента для отображения карты
-        style: 'mapbox://styles/boykozaurus/cm02lnizi007e01r64giudtmj', // стиль карты
-        center: [20.0, 50.0], // начальный центр карты [долгота, широта]
-        zoom: 2, // начальный зум карты
+        container: 'map',
+        style: 'mapbox://styles/boykozaurus/cm02lnizi007e01r64giudtmj',
+        center: [20.0, 50.0],
+        zoom: 2,
     });
 
-        map.scrollZoom.disable();
+    map.scrollZoom.disable();
 
-    let activeRouteIndex = null; // Переменная для отслеживания выбранного маршрута
-    let activeCard = null; // Переменная для отслеживания открытой карточки
-    let markers = []; // Переменная для хранения маркеров на карте
+    let activeRouteIndex = null;
+    let activeCard = null;
+    let markers = [];
 
-    // Функция для закрытия всех карточек
     function closeAllCards() {
         const allCards = document.querySelectorAll('.route-info-block');
         allCards.forEach(card => {
@@ -40,49 +38,41 @@
         });
     }
 
-    // Функция для удаления всех маркеров с карты
     function removeMarkers() {
         markers.forEach(marker => marker.remove());
         markers = [];
     }
 
-
-    // Загрузка данных из JSON файла
     fetch('routeData.json')
         .then(response => response.json())
         .then(routeDataArray => {
             const routesInfoContainer = document.getElementById('routes-info');
 
-            // Для каждого маршрута создаем свой блок и слой
             routeDataArray.forEach((geojsonData, index) => {
                 const defaultColor = '#BDBDBD';
                 const activeColor = '#1C1C1C';
 
-                // Создаем уникальный блок для каждого маршрута
                 const routeInfoBlock = document.createElement('div');
                 routeInfoBlock.classList.add('route-info-block');
 
-                // Создаем картинку
                 if (geojsonData.routeInfo.featuredImage) {
                     const routeImg = document.createElement('img');
                     routeImg.src = geojsonData.routeInfo.featuredImage;
                     routeImg.classList.add('route-info-img');
                     routeInfoBlock.appendChild(routeImg);
 
-                    // Добавляем обработчик клика на изображение для открытия/закрытия
                     routeImg.addEventListener('click', () => {
                         handleCardToggle(routeInfoBlock, index);
                     });
                 }
 
-                // Заголовок и описание
                 const titleWrapper = document.createElement('div');
                 titleWrapper.innerHTML = `<div class="route-info-title-wrapper">
-<h3 class="route-info-title">${geojsonData.routeInfo.title}</h3>
-<svg width="24" height="24" class="route-info-title-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.9999 17.8132C11.5499 17.8132 11.1269 17.6352 10.8109 17.3132L1.0249 7.31623L1.9749 6.38623L11.7599 16.3822C11.8899 16.5132 12.1089 16.5142 12.2399 16.3812L22.0239 6.38623L22.9749 7.31623L13.1899 17.3122C12.8729 17.6362 12.4499 17.8132 11.9999 17.8132Z" fill="#790200"/>
-</svg>
-</div>`;
+                    <h3 class="route-info-title">${geojsonData.routeInfo.title}</h3>
+                    <svg width="24" height="24" class="route-info-title-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9999 17.8132C11.5499 17.8132 11.1269 17.6352 10.8109 17.3132L1.0249 7.31623L1.9749 6.38623L11.7599 16.3822C11.8899 16.5132 12.1089 16.5142 12.2399 16.3812L22.0239 6.38623L22.9749 7.31623L13.1899 17.3122C12.8729 17.6362 12.4499 17.8132 11.9999 17.8132Z" fill="#790200"/>
+                    </svg>
+                </div>`;
 
                 const routeDescription = document.createElement('div');
                 routeDescription.classList.add('route-info-description');
@@ -92,12 +82,10 @@
                 routeInfoBlock.appendChild(routeDescription);
                 routesInfoContainer.appendChild(routeInfoBlock);
 
-                // Добавляем обработчик клика на заголовок для открытия/закрытия
                 titleWrapper.addEventListener('click', () => {
                     handleCardToggle(routeInfoBlock, index);
                 });
 
-                // Добавляем маршрут на карту
                 map.on('load', () => {
                     map.addSource(`route-${index}`, {
                         type: 'geojson',
@@ -108,45 +96,58 @@
                         id: `route-${index}`,
                         type: 'line',
                         source: `route-${index}`,
-                        filter: ['==', '$type', 'LineString'], // Только линии
+                        filter: ['==', '$type', 'LineString'],
                         layout: {
                             'line-join': 'round',
                             'line-cap': 'round',
                         },
                         paint: {
-                            'line-color': defaultColor, // Черный по умолчанию
+                            'line-color': defaultColor,
                             'line-width': 4,
                             'line-opacity': 0.5,
                         },
                     });
+
+                    if (index === 0) {
+                        handleCardToggle(routeInfoBlock, index); // Открываем первую карточку по умолчанию
+                    }
                 });
 
-                // Функция для обработки кликов и открытия/закрытия карточек
                 function handleCardToggle(routeInfoBlock, index) {
-                    // Закрываем предыдущую карточку и удаляем точки
                     if (activeCard && activeCard !== routeInfoBlock) {
                         activeCard.classList.remove('is-opened');
                         map.setPaintProperty(`route-${activeRouteIndex}`, 'line-color', activeColor);
-                        removeMarkers(); // Удаляем точки предыдущего маршрута
+                        removeMarkers();
                     }
 
-                    // Открываем текущую карточку и меняем цвет линии
                     if (routeInfoBlock === activeCard) {
                         routeInfoBlock.classList.remove('is-opened');
                         map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
-                        removeMarkers(); // Удаляем точки, если карточка закрывается
+                        removeMarkers();
                         activeCard = null;
                         activeRouteIndex = null;
                     } else {
                         routeInfoBlock.classList.add('is-opened');
                         map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
-                        addMarkers(geojsonData.features); // Добавляем точки для выбранного маршрута
+                        addMarkers(geojsonData.features);
+
+                        const bounds = new mapboxgl.LngLatBounds();
+                        geojsonData.features.forEach(function(feature) {
+                            if (feature.geometry.type === 'LineString') {
+                                feature.geometry.coordinates.forEach(coord => bounds.extend(coord));
+                            }
+                        });
+
+                        map.fitBounds(bounds, {
+                            padding: 20,
+                            maxZoom: 14,
+                        });
+
                         activeCard = routeInfoBlock;
                         activeRouteIndex = index;
                     }
                 }
 
-                // Функция для добавления точек на карту
                 function addMarkers(features) {
                     features.forEach(function (feature) {
                         if (feature.geometry.type === 'Point') {
@@ -154,25 +155,35 @@
                                 `${feature.properties.city}: ${feature.properties.event}`
                             );
 
-                            const marker = new mapboxgl.Marker()
-                                .setLngLat(feature.geometry.coordinates)
-                                .setPopup(popup)
-                                .addTo(map);
+                            const marker = new mapboxgl.Marker({
+                                element: createCustomMarker(),
+                            })
+                            .setLngLat(feature.geometry.coordinates)
+                            .setPopup(popup)
+                            .addTo(map);
 
-                            // Добавляем обработчик клика на маркер для вызова модалки
                             marker.getElement().addEventListener('click', () => {
                                 openModal(`${feature.properties.city}: ${feature.properties.event}`);
                             });
 
-                            markers.push(marker); // Сохраняем маркер для последующего удаления
+                            markers.push(marker);
                         }
                     });
+                }
+
+                function createCustomMarker() {
+                    const el = document.createElement('div');
+                    el.style.width = '25px';
+                    el.style.height = '25px';
+                    el.style.borderRadius = '50%';
+                    el.style.backgroundColor = '#1C1C1C';
+                    el.style.boxShadow = '0px 5px 0px rgba(28, 28, 28, 0.5)';
+                    return el;
                 }
             });
         });
 </script>
 
-<!-- Модальное окно стили -->
 <style>
     .modal {
         display: flex;
@@ -199,7 +210,8 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        cursor: pointer
-
+        cursor: pointer;
+    }
+</style>
 </body>
 </html>
