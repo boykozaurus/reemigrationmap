@@ -20,7 +20,7 @@
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/boykozaurus/cm02lnizi007e01r64giudtmj',
+        style: 'mapbox://styles/boykozaurus/cm27ozgkm00fd01pgbjv9fiai',
         center: [20.0, 50.0],
         zoom: 2,
     });
@@ -49,8 +49,8 @@
             const routesInfoContainer = document.getElementById('routes-info');
 
             routeDataArray.forEach((geojsonData, index) => {
-            const defaultColor = 'rgba(119, 119, 119, 0.5)';
-            const activeColor = 'rgba(78, 21, 18, 1)';
+            const defaultColor = 'rgba(189, 189, 189, 0.8)'; // Прозрачность 0.8
+            const activeColor = 'rgba(231, 209, 179, 1)';     // Прозрачность 1
 
                 const routeInfoBlock = document.createElement('div');
                 routeInfoBlock.classList.add('route-info-block');
@@ -173,11 +173,11 @@
 
                 function createCustomMarker() {
                     const el = document.createElement('div');
-                    el.style.width = '25px';
-                    el.style.height = '25px';
+                    el.style.width = '15px';
+                    el.style.height = '15px';
                     el.style.borderRadius = '50%';
-                    el.style.backgroundColor = '#4e1512';
-                    el.style.boxShadow = '0px 0px 0px 10px rgba(78, 21, 18, 0.5)';
+                    el.style.backgroundColor = '#E7D1B3';
+                    el.style.boxShadow = '0px 0px 0px 5px rgba(231, 209, 179, 1)';
                     return el;
                 }
             });
