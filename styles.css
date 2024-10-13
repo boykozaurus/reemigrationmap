@@ -32,7 +32,7 @@ body {
     height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #sidebar {
         width: 100%;
         height: 375px;
@@ -79,6 +79,7 @@ body {
     transition: all .3s ease-in-out;
 }
 
+
 .route-info-title-wrapper {
     display: flex;
     align-items: center;
@@ -108,9 +109,10 @@ body {
     line-height: 18px;
     border-radius: 16px;
     height: 32px;
-    padding: 0 16px;
+    padding:0 16px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+
 }
 
 li {
@@ -125,33 +127,32 @@ li:hover {
     border-radius: 5px;
 }
 
+/* Стили для мобильной версии */
 @media (max-width: 480px) {
     #sidebar {
-        width: 250px; /* Сайдбар занимает 250px */
-        height: auto;
-        padding: 16px;
+        width: 250px;
+        height: 100%;
+        overflow-y: scroll;
     }
 
     .route-info-block {
-        padding: 12px; /* Паддинги у карточек 12px */
-        width: 100%;
-        max-width: 228px; /* Максимальная ширина карточек 228px */
-        margin-bottom: 8px; /* Расстояние между карточками 8px */
+        padding: 12px;
+        width: 226px;
+        margin-bottom: 8px;
     }
 
     .route-info-img {
-        width: 202px; /* Ширина изображений 202px */
-        height: auto; /* Автоматическая высота в зависимости от пропорций изображения */
+        width: 202px;
+        height: auto;
     }
 
     .route-info-title {
-        font-size: 14px; /* Можно уменьшить шрифт для мобильных */
+        font-size: 14px;
         line-height: 16px;
     }
 
     .route-info-button {
-        font-size: 14px; /* Также уменьшим размер кнопок */
+        font-size: 14px;
         height: 28px;
-        padding: 0 12px;
     }
 }
