@@ -161,7 +161,7 @@
                         activeRouteIndex = null;
                     } else {
                         routeInfoBlock.classList.add('is-opened');
-                        map.setPaintProperty(`route-${index}`, 'line-color', activeColor);
+                        map.setPaintProperty(`route-${index}`, 'line-color', defaultColor);
                         addMarkers(geojsonData.features); // Добавляем точки для выбранного маршрута
                         activeCard = routeInfoBlock;
                         activeRouteIndex = index;
