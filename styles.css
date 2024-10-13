@@ -32,7 +32,7 @@ body {
     height: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     #sidebar {
         width: 100%;
         height: 375px;
@@ -79,7 +79,6 @@ body {
     transition: all .3s ease-in-out;
 }
 
-
 .route-info-title-wrapper {
     display: flex;
     align-items: center;
@@ -109,10 +108,9 @@ body {
     line-height: 18px;
     border-radius: 16px;
     height: 32px;
-    padding:0 16px;
+    padding: 0 16px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-
 }
 
 li {
@@ -125,4 +123,35 @@ li:hover {
     color: #007bff;
     background-color: #e0e0e0;
     border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        width: 250px; /* Сайдбар занимает 250px */
+        height: auto;
+        padding: 16px;
+    }
+
+    .route-info-block {
+        padding: 12px; /* Паддинги у карточек 12px */
+        width: 100%;
+        max-width: 228px; /* Максимальная ширина карточек 228px */
+        margin-bottom: 8px; /* Расстояние между карточками 8px */
+    }
+
+    .route-info-img {
+        width: 202px; /* Ширина изображений 202px */
+        height: auto; /* Автоматическая высота в зависимости от пропорций изображения */
+    }
+
+    .route-info-title {
+        font-size: 14px; /* Можно уменьшить шрифт для мобильных */
+        line-height: 16px;
+    }
+
+    .route-info-button {
+        font-size: 14px; /* Также уменьшим размер кнопок */
+        height: 28px;
+        padding: 0 12px;
+    }
 }
