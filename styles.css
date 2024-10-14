@@ -7,6 +7,7 @@ body {
     padding: 0;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /* Чтобы исключить скроллинг для всего документа */
 }
 
 #sidebar {
@@ -14,11 +15,11 @@ body {
     background: #EFEEED;
     padding: 24px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Добавлено для скроллинга */
+    overflow-y: auto; /* Включаем прокрутку */
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh; /* Высота 100% экрана */
     z-index: 1;
     transition: transform 0.3s ease-in-out;
 }
@@ -29,21 +30,21 @@ body {
     bottom: 0;
     width: calc(100% - 380px);
     left: 380px;
-    height: 100%;
-    overflow: hidden; /* Добавлено для отключения overflow */
+    height: 100vh; /* Высота 100% экрана */
+    overflow: hidden; /* Отключаем overflow */
 }
 
 @media (max-width:500px) {
     #sidebar {
         width: 250px;
-        height: 724px;
+        height: 100vh; /* Высота 100% экрана */
     }
     #map {
         left: 250px !important;
         width: calc(100% - 250px) !important;
     }
     #routes-info {
-        height: 700px;
+        height: auto; /* Убираем фиксированную высоту */
         overflow-y: scroll;
     }
 
