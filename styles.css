@@ -32,15 +32,25 @@ body {
     height: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width:500px) {
     #sidebar {
-        width: 100%;
-        height: 375px;
+        width: 250px;
+        height: 724px;
     }
     #map {
-        width: 100%;
-        left: 0;
+        left: 250px !important;
+        width: calc(100% - 250px) !important;
     }
+    #routes-info {
+        height: 700px;
+        overflow-y: scroll;
+    }
+
+    #sidebar.collapsed ~ #map {
+        left: 0 !important;
+        width: 100% !important;
+    }
+
 }
 
 .route-info-title {
@@ -52,8 +62,6 @@ body {
 
 .route-info-img {
     display: none;
-    width: 300px;
-    height: 225px;
     margin-bottom: 16px;
     transition: all 1s ease-in-out;
 }
@@ -66,7 +74,7 @@ body {
     padding: 16px;
     border-radius: 8px;
     margin-bottom: 8px;
-    width: 332px;
+    width: 100%;
 }
 
 .route-info-block.is-opened .route-info-description,
@@ -128,31 +136,3 @@ li:hover {
 }
 
 /* Стили для мобильной версии */
-@media (max-width: 480px) {
-    #sidebar {
-        width: 250px;
-        height: 100%;
-        overflow-y: scroll;
-    }
-
-    .route-info-block {
-        padding: 12px;
-        width: 226px;
-        margin-bottom: 8px;
-    }
-
-    .route-info-img {
-        width: 202px;
-        height: auto;
-    }
-
-    .route-info-title {
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .route-info-button {
-        font-size: 14px;
-        height: 28px;
-    }
-}
