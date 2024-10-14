@@ -45,7 +45,7 @@ body {
 @media (max-width:500px) {
     #sidebar {
         width: 250px;
-        height: 724px;
+        height: auto;
     }
     #map {
         left: 250px !important;
