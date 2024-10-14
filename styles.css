@@ -7,7 +7,6 @@ body {
     padding: 0;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden; /* Чтобы исключить скроллинг для всего документа */
 }
 
 #sidebar {
@@ -15,11 +14,11 @@ body {
     background: #EFEEED;
     padding: 24px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Включаем прокрутку */
+    overflow-y: auto;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh; /* Высота 100% экрана */
+    height: 100%;
     z-index: 1;
     transition: transform 0.3s ease-in-out;
 }
@@ -30,21 +29,20 @@ body {
     bottom: 0;
     width: calc(100% - 380px);
     left: 380px;
-    height: 100vh; /* Высота 100% экрана */
-    overflow: hidden; /* Отключаем overflow */
+    height: 100%;
 }
 
 @media (max-width:500px) {
     #sidebar {
         width: 250px;
-        height: 100vh; /* Высота 100% экрана */
+        height: 724px;
     }
     #map {
         left: 250px !important;
         width: calc(100% - 250px) !important;
     }
     #routes-info {
-        height: auto; /* Убираем фиксированную высоту */
+        height: 700px;
         overflow-y: scroll;
     }
 
@@ -52,6 +50,7 @@ body {
         left: 0 !important;
         width: 100% !important;
     }
+
 }
 
 .route-info-title {
@@ -121,6 +120,7 @@ body {
     padding:0 16px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+
 }
 
 li {
