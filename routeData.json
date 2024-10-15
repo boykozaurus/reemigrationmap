@@ -1,73 +1,73 @@
 [
   {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "LineString",
-          "coordinates": [
-            [24.1531, 55.2637],
-            [-58.3816, -34.6037],
-            [37.6173, 55.7558],
-            [25.9358, 48.2920]
-          ]
-        },
-        "properties": {
-          "routeId": "route-2"
-        }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [24.1531, 55.2637],
+          [-58.3816, -34.6037],
+          [37.6174, 55.7559],
+          [25.9360, 48.2921]
+        ]
       },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [24.1531, 55.2637]
-        },
-        "properties": {
-          "event": "место рождения",
-          "city": "Кейданы, Ковенская губерния"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-58.3816, -34.6037]
-        },
-        "properties": {
-          "event": "эмиграция в Аргентину в 1925",
-          "city": "Аргентина"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [37.6173, 55.7558]
-        },
-        "properties": {
-          "event": "переезд в СССР в 1932",
-          "city": "Москва, СССР"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [25.9358, 48.2920]
-        },
-        "properties": {
-          "event": "умер в Черновцах в 1979",
-          "city": "Черновцы, Украина"
-        }
+      "properties": {
+        "routeId": "route-1"
       }
-    ],
-    "routeInfo": {
-      "title": "Гирш Блоштейн (агент «Кант»)",
-      "description": "Гирш Блоштейн был поэтом и писателем, который с 1938 года стал агентом МГБ под псевдонимом 'Кант'. Он родился в бедной семье в Литве, 8 лет прожил в Аргентине, где работал редактором левых изданий, затем переехал в СССР. Блоштейн активно сотрудничал с советскими органами госбезопасности, занимался литературной деятельностью и умер в Черновцах в 1979 году.",
-      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3334a313767369_girsh-blo.jpg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.1531, 55.2637]
+      },
+      "properties": {
+        "event": "место рождения в Кейданы, Ковенская губерния",
+        "city": "Кейданы, Ковенская губерния"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.3815, -34.6036]
+      },
+      "properties": {
+        "event": "эмиграция в Аргентину в 1925",
+        "city": "Аргентина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.6174, 55.7559]
+      },
+      "properties": {
+        "event": "переезд в СССР в 1932",
+        "city": "Москва, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.9360, 48.2921]
+      },
+      "properties": {
+        "event": "умер в Черновцах в 1979",
+        "city": "Черновцы, Украина"
+      }
     }
-  },
+  ],
+  "routeInfo": {
+    "title": "Гирш Блоштейн (агент «Кант»)",
+    "description": "Гирш Блоштейн был поэтом и писателем, который с 1938 года стал агентом МГБ под псевдонимом 'Кант'. Он родился в бедной семье в Литве, 8 лет прожил в Аргентине, где работал редактором левых изданий, затем переехал в СССР. Блоштейн активно сотрудничал с советскими органами госбезопасности, занимался литературной деятельностью и умер в Черновцах в 1979 году.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3334a313767369_girsh-blo.jpg"
+  }
+},
   {
     "type": "FeatureCollection",
     "features": [
