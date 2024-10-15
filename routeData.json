@@ -1637,5 +1637,434 @@
     "description": "Сергей Эйзенштейн, выдающийся советский режиссер и теоретик кино. Работал за границей, включая Голливуд, и вернулся в СССР в 1932 году.",
     "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fd198130b56e4cf6c_serhei-eis.jpg"
   }
+},
+  {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [54.4067, 32.4414],
+          [55.1904, 30.2049],
+          [49.8728, 8.6512],
+          [55.7558, 37.6173],
+          [52.5200, 13.4050],
+          [55.7558, 37.6173]
+        ]
+      },
+      "properties": {
+        "routeId": "route-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.4067, 32.4414]
+      },
+      "properties": {
+        "event": "рождение, 1890",
+        "city": "Починок, Российская империя"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.1904, 30.2049]
+      },
+      "properties": {
+        "event": "учеба, 1909",
+        "city": "Витебск, Российская империя"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.8728, 8.6512]
+      },
+      "properties": {
+        "event": "учеба, 1909-1914",
+        "city": "Дармштадт, Германия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "жизнь в 1920-е",
+        "city": "Москва, РСФСР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.5200, 13.4050]
+      },
+      "properties": {
+        "event": "жизнь в 1920-е",
+        "city": "Берлин, Германия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "возвращение и смерть в 1941",
+        "city": "Москва, СССР"
+      }
+    }
+  ],
+  "routeInfo": {
+    "title": "Эль Лисицкий (1890–1941)",
+    "description": "Эль Лисицкий — советский художник, архитектор и дизайнер, один из лидеров русского авангарда. Работал как в СССР, так и в Германии, внёс значительный вклад в супрематизм и конструктивизм.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f158581b9e10f8ca3_el-lis.jpg"
+  }
+},
+  {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [55.7879, 49.1233],
+          [59.5675, 150.8114],
+          [55.7558, 37.6173],
+          [40.7128, -74.0060],
+          [55.7558, 37.6173]
+        ]
+      },
+      "properties": {
+        "routeId": "route-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7879, 49.1233]
+      },
+      "properties": {
+        "event": "рождение, 1932",
+        "city": "Казань, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [59.5675, 150.8114]
+      },
+      "properties": {
+        "event": "детство, 1930-е",
+        "city": "Магадан, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "с 1950-х",
+        "city": "Москва, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.7128, -74.0060]
+      },
+      "properties": {
+        "event": "эмиграция в 1980",
+        "city": "США"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "возвращение в 2004",
+        "city": "Москва, Россия"
+      }
+    }
+  ],
+  "routeInfo": {
+    "title": "Василий Аксёнов (1932–2009)",
+    "description": "Василий Аксёнов — известный советский писатель, представитель шестидесятников. Эмигрировал в США в 1980 году, но вернулся в Россию в 2004 году.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f6991b32c718a428d_vasilii-aks.jpg"
+  }
+},
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [51.0056, 27.1164],
+          [-34.6037, -58.3816],
+          [50.8503, 4.3517],
+          [48.9226, 24.7097]
+        ]
+      },
+      "properties": {
+        "routeId": "route-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [51.0056, 27.1164]
+      },
+      "properties": {
+        "event": "рождение, 1921/1924",
+        "city": "Березно, Волынь, Украина (тогда Польша)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-34.6037, -58.3816]
+      },
+      "properties": {
+        "event": "эмиграция в 1935",
+        "city": "Буэнос-Айрес, Аргентина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [50.8503, 4.3517]
+      },
+      "properties": {
+        "event": "приезд в Брюссель, 1947",
+        "city": "Брюссель, Бельгия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [48.9226, 24.7097]
+      },
+      "properties": {
+        "event": "переезд в 1949",
+        "city": "Станислав (Ивано-Франковск), Украина"
+      }
+    }
+  ],
+  "routeInfo": {
+    "title": "Давид Гендлер (1921/1924–1951)",
+    "description": "Давид Гендлер эмигрировал с семьей в Аргентину в 1935 году. В 1947 году он прибыл в Брюссель, затем в 1949 году вернулся в СССР, проживая в Станиславе.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95faf6eff9fd796d37f_david-gen.jpg"
+  }
+},
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [41.7151, 44.8271],
+          [41.6418, 41.6386],
+          [46.4825, 30.7233],
+          [32.7940, 34.9896],
+          [41.7151, 44.8271]
+        ]
+      },
+      "properties": {
+        "routeId": "route-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.7151, 44.8271]
+      },
+      "properties": {
+        "event": "рождение, 1896",
+        "city": "Тбилиси, Российская империя"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.6418, 41.6386]
+      },
+      "properties": {
+        "event": "1925",
+        "city": "Батуми, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.4825, 30.7233]
+      },
+      "properties": {
+        "event": "1925",
+        "city": "Одесса, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.7940, 34.9896]
+      },
+      "properties": {
+        "event": "1925–1926",
+        "city": "Хайфа, Палестина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.7151, 44.8271]
+      },
+      "properties": {
+        "event": "возвращение, 1926",
+        "city": "Тбилиси, СССР"
+      }
+    }
+  ],
+  "routeInfo": {
+    "title": "Яков (Себи) Хананашвили (1896–1972)",
+    "description": "Яков Хананашвили был активным участником грузинского сионистского движения. В 1925 году эмигрировал в Палестину, но вернулся в СССР в 1926 году, где был арестован и отправлен в ГУЛАГ.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f2853d2955e074cbc_sebi-haa.jpg"
+  }
+},
+  {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [54.6872, 25.2797],   // Вильно, Литва
+          [52.2978, 84.8709],   // Алтай, СССР
+          [51.7592, 19.4560],   // Лодзь, Польша
+          [31.0461, 34.8516],   // Израиль
+          [55.7558, 37.6173],   // Москва, СССР (1978–1989)
+          [53.4808, -2.2426],   // Манчестер, Англия
+          [55.7558, 37.6173]    // Москва, Россия (смерть, 2020)
+        ]
+      },
+      "properties": {
+        "routeId": "route-26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.6872, 25.2797]
+      },
+      "properties": {
+        "event": "рождение, 1930",
+        "city": "Вильно, Литва"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.2978, 84.8709]
+      },
+      "properties": {
+        "event": "ссылка на поселение, 1941",
+        "city": "Алтай, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [51.7592, 19.4560]
+      },
+      "properties": {
+        "event": "проживание, 1946–1947",
+        "city": "Лодзь, Польша"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.0461, 34.8516]
+      },
+      "properties": {
+        "event": "участие в войне за независимость, 1948",
+        "city": "Израиль"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "программа культурного обмена, 1978–1989",
+        "city": "Москва, СССР"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [53.4808, -2.2426]
+      },
+      "properties": {
+        "event": "научная работа и преподавание, 1989–2020",
+        "city": "Манчестер, Англия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.7558, 37.6173]
+      },
+      "properties": {
+        "event": "смерть, 2020",
+        "city": "Москва, Россия"
+      }
+    }
+  ],
+  "routeInfo": {
+    "title": "Теодор Шанин (1930–2020)",
+    "description": "Теодор Шанин — профессор, социолог, основатель Московской высшей школы социальных и экономических наук. Родился в Вильно, пережил ссылку на Алтай, воевал за независимость Израиля, работал в Англии и России, был одним из организаторов 'Шанинки'.",
+    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f25199ec0146bf9f8_robert-rob.jpg"
+  }
 }
 ]
