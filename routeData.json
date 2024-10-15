@@ -691,5 +691,73 @@
       "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f10ccba07c6541aa3_leon-sachs.jpg"
     }
   },
-}
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [57.6261, 39.8845],
+            [51.5074, -0.1278],
+            [32.087647, 34.779338],
+            [55.7558, 37.6173]
+          ]
+        },
+        "properties": {
+          "routeId": "route-10"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [57.6261, 39.8845]
+        },
+        "properties": {
+          "event": "место рождения, 1917",
+          "city": "Ярославль, Российская империя"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [51.5074, -0.1278]
+        },
+        "properties": {
+          "event": "переезд в 1984",
+          "city": "Лондон, Великобритания"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [32.087647, 34.779338]
+        },
+        "properties": {
+          "event": "1987–1988",
+          "city": "Тель-Авив"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "возвращение в 1989",
+          "city": "Москва, СССР"
+        }
+      }
+    ],
+    "routeInfo": {
+      "title": "Юрий Любимов (1917–2014)",
+      "description": "Юрий Любимов (1917–2014) был известным советским и российским театральным режиссером, основателем и художественным руководителем Театра на Таганке. Он жил в Лондоне и Израиле, но вернулся в Россию в 1989 году.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f87bbd89e5c7d272a_aleksandr-sol.jpg"
+    }
+  }
 ]
