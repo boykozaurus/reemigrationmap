@@ -1,2168 +1,695 @@
 [
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [46.474515, 30.693236],
-          [40.579628, -73.971888],
-          [46.482500, 30.723300],
-          [40.578656, -73.965417],
-          [46.446608, 30.709715]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [46.474515, 30.693236],
+            [40.579628, -73.971888],
+            [46.482500, 30.723300],
+            [40.578656, -73.965417],
+            [46.446608, 30.709715]
+          ]
+        },
+        "properties": {
+          "routeId": "route-1"
+        }
       },
-      "properties": {
-        "routeId": "route-1"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.474515, 30.693236]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [46.474515, 30.693236]
+        },
+        "properties": {
+          "event": "место рождения, 1895",
+          "city": "Одесса, Российская империя"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1895",
-        "city": "Одесса, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [40.579628, -73.971888]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.579628, -73.971888]
+        },
+        "properties": {
+          "event": "переезд в 1913",
+          "city": "Нью-Йорк, США"
+        }
       },
-      "properties": {
-        "event": "переезд в 1913",
-        "city": "Нью-Йорк, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.482500, 30.723300]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [46.482500, 30.723300]
+        },
+        "properties": {
+          "event": "возвращение в 1917",
+          "city": "Одесса, Российская империя"
+        }
       },
-      "properties": {
-        "event": "возвращение в 1917",
-        "city": "Одесса, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [40.578656, -73.965417]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.578656, -73.965417]
+        },
+        "properties": {
+          "event": "поездка в 1924",
+          "city": "Нью-Йорк, США"
+        }
       },
-      "properties": {
-        "event": "поездка в 1924",
-        "city": "Нью-Йорк, США"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [46.446608, 30.709715]
+        },
+        "properties": {
+          "event": "возвращение в 1926",
+          "city": "Одесса, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.446608, 30.709715]
-      },
-      "properties": {
-        "event": "возвращение в 1926",
-        "city": "Одесса, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Рувин Альперович (2 апр. 1895 — 23 апр. 1974)",
+      "description": "Рувин (Рувим) Иосифович Альперович родился в 1895 году в Одессе. С 1913 по 1917 гг. жил в Нью-Йорке и работал на оружейном заводе, затем вернулся в советскую Россию. С 1919 по 1920 гг. учился в Одесской консерватории. В дальнейшем работал переводчиком в различных учреждениях, включая Управление Черноморского пароходства.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f435b69984102df69_ruvin-alp.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Рувин Альперович (2 апр. 1895 — 23 апр. 1974)",
-    "description": "Рувин (Рувим) Иосифович Альперович родился в 1895 году в Одессе. С 1913 по 1917 гг. жил в Нью-Йорке и работал на оружейном заводе, затем вернулся в советскую Россию. С 1919 по 1920 гг. учился в Одесской консерватории. В дальнейшем работал переводчиком в различных учреждениях, включая Управление Черноморского пароходства.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f435b69984102df69_ruvin-alp.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [55.288043, 23.982401],
-          [-34.6037, -58.3816],
-          [55.883461, 37.549374],
-          [48.2920, 25.9358]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [55.288043, 23.982401],
+            [-34.6037, -58.3816],
+            [55.883461, 37.549374],
+            [48.2920, 25.9358]
+          ]
+        },
+        "properties": {
+          "routeId": "route-2"
+        }
       },
-      "properties": {
-        "routeId": "route-2"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.288043, 23.982401]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.288043, 23.982401]
+        },
+        "properties": {
+          "event": "родился, 1895",
+          "city": "Кейданы, Российская империя"
+        }
       },
-      "properties": {
-        "event": "родился, 1895",
-        "city": "Кейданы, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.6037, -58.3816]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-34.6037, -58.3816]
+        },
+        "properties": {
+          "event": "эмигрирует в 1925",
+          "city": "Аргентина"
+        }
       },
-      "properties": {
-        "event": "эмигрирует в 1925",
-        "city": "Аргентина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.883461, 37.549374]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.883461, 37.549374]
+        },
+        "properties": {
+          "event": "переезд в феврале 1932",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "переезд в феврале 1932",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [48.2920, 25.9358]
+        },
+        "properties": {
+          "event": "умер в 1979",
+          "city": "Черновцы, Украина"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.2920, 25.9358]
-      },
-      "properties": {
-        "event": "умер в 1979",
-        "city": "Черновцы, Украина"
-      }
+    ],
+    "routeInfo": {
+      "title": "Гирш Блоштейн (агент «Кант») (1895 — 1979)",
+      "description": "Блоштейн Гирш Давидович (1895, Кейданы, Ковенская губ. — 1979, Черновцы) — поэт и писатель, с 1938 г. — агент МГБ под псевдонимом «Кант». Гирш родился в бедной семье в Литве, 8 лет прожил в Аргентине, где работал редактором левых изданий. Затем в феврале 1932 года ему удается по ходатайству Московской ассоциации пролетарских писателей получить приглашение на переезд в СССР. Блоштейн активно сотрудничал с советскими органами госбезопасности, занимался литературной деятельностью и умер в Черновцах в 1979 году.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3334a313767369_girsh-blo.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Гирш Блоштейн (агент «Кант») (1895 — 1979)",
-    "description": "Блоштейн Гирш Давидович (1895, Кейданы, Ковенская губ. — 1979, Черновцы) —поэт и писатель, с 1938 г. — агент МГБ под псевдонимом «Кант». Гирш родился в бедной семье в Литве, 8 лет прожил в Аргентине, где работал редактором левых изданий. Затем в феврале 1932 года ему удается по ходатайству Московской ассоциации пролетарских писателей получить приглашение на переезд в СССР. Блоштейн активно сотрудничал с советскими органами госбезопасности, занимался литературной деятельностью и умер в Черновцах в 1979 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3334a313767369_girsh-blo.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [50.1237, 27.5075],
-          [52.220690, 20.997551],
-          [52.536468, 13.498847],
-          [48.871247, 2.356302],
-          [51.503664, -0.126487],
-          [41.876730, 12.457707],
-          [55.742222, 37.718177],
-          [59.561895, 150.817463]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [50.1237, 27.5075],
+            [52.220690, 20.997551],
+            [52.536468, 13.498847],
+            [48.871247, 2.356302],
+            [51.503664, -0.126487],
+            [41.876730, 12.457707],
+            [55.742222, 37.718177],
+            [59.561895, 150.817463]
+          ]
+        },
+        "properties": {
+          "routeId": "route-3"
+        }
       },
-      "properties": {
-        "routeId": "route-3"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.1237, 27.5075]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [50.1237, 27.5075]
+        },
+        "properties": {
+          "event": "место рождения, 1895",
+          "city": "Полонное, Российская империя"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1895",
-        "city": "Полонное, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.220690, 20.997551]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.220690, 20.997551]
+        },
+        "properties": {
+          "event": "1921–1926",
+          "city": "Варшава"
+        }
       },
-      "properties": {
-        "event": "1921–1926",
-        "city": "Варшава"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.536468, 13.498847]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.536468, 13.498847]
+        },
+        "properties": {
+          "event": "1921–1926",
+          "city": "Берлин"
+        }
       },
-      "properties": {
-        "event": "1921–1926",
-        "city": "Берлин"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.871247, 2.356302]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [48.871247, 2.356302]
+        },
+        "properties": {
+          "event": "1921–1926",
+          "city": "Париж"
+        }
       },
-      "properties": {
-        "event": "1921–1926",
-        "city": "Париж"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.503664, -0.126487]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [51.503664, -0.126487]
+        },
+        "properties": {
+          "event": "1921–1926",
+          "city": "Лондон"
+        }
       },
-      "properties": {
-        "event": "1921–1926",
-        "city": "Лондон"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [41.876730, 12.457707]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [41.876730, 12.457707]
+        },
+        "properties": {
+          "event": "1921–1926",
+          "city": "Рим"
+        }
       },
-      "properties": {
-        "event": "1921–1926",
-        "city": "Рим"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.742222, 37.718177]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.742222, 37.718177]
+        },
+        "properties": {
+          "event": "переезд в 1926",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "переезд в 1926",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [59.561895, 150.817463]
+        },
+        "properties": {
+          "event": "арест и ссылка, 1948–1952",
+          "city": "Магадан, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.561895, 150.817463]
-      },
-      "properties": {
-        "event": "арест и ссылка, 1948–1952",
-        "city": "Магадан, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Перец Маркиш (1895 — 1952)",
+      "description": "Перец Маркиш (1895 — 1952) — еврейский поэт. С 1921 по 1926 годы по польскому паспорту Маркиш живет в Варшаве, Берлине, Париже, Лондоне, Риме, где много пишет и публикуется. Помимо многочисленных стихов, опубликованных в еврейской прессе Польши и СССР, написал несколько пьес, которые шли на сцене Московского ГОСЕТа. Был руководителем еврейской секции СП СССР, член президиума ЕАК; арестован 27.01.1949 и расстрелян 12.08.1952, реабилитирован 22.11.1955.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f158581b9e10f8cde_peretz-mar.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Перец Маркиш (1895 — 1952)",
-    "description": "Перец Маркиш (1895 — 1952) — еврейский поэт. С 1921 по 1926 годы по польскому паспорту Маркиш живет в Варшаве, Берлине, Париже, Лондоне, Риме, где много пишет и публикуется. Помимо многочисленных стихов, опубликованных в еврейской прессе Польши и СССР, написал несколько пьес, которые шли на сцене Московского ГОСЕТа. Был руководителем еврейской секции СП СССР, член президиума ЕАК; арестован 27.01.1949 и расстрелян 12.08.1952, реабилитирован 22.11.1955.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f158581b9e10f8cde_peretz-mar.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [46.6452, 34.7492],
-          [52.540644, 13.463142],
-          [52.239615, 20.997551],
-          [55.701166, 37.725951],
-          [59.545696, 150.856918]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [46.6452, 34.7492],
+            [52.540644, 13.463142],
+            [52.239615, 20.997551],
+            [55.701166, 37.725951],
+            [59.545696, 150.856918]
+          ]
+        },
+        "properties": {
+          "routeId": "route-4"
+        }
       },
-      "properties": {
-        "routeId": "route-4"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.6452, 34.7492]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [46.6452, 34.7492]
+        },
+        "properties": {
+          "event": "место рождения, 1884",
+          "city": "Охримово, Российская империя"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1884",
-        "city": "Охримово, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.540644, 13.463142]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.540644, 13.463142]
+        },
+        "properties": {
+          "event": "эмиграция в 1921",
+          "city": "Берлин, Германия"
+        }
       },
-      "properties": {
-        "event": "эмиграция в 1921",
-        "city": "Берлин, Германия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.239615, 20.997551]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.239615, 20.997551]
+        },
+        "properties": {
+          "event": "короткий период до 1934",
+          "city": "Варшава, Польша"
+        }
       },
-      "properties": {
-        "event": "короткий период до 1934",
-        "city": "Варшава, Польша"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.701166, 37.725951]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.701166, 37.725951]
+        },
+        "properties": {
+          "event": "возвращение в 1934",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "возвращение в 1934",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [59.545696, 150.856918]
+        },
+        "properties": {
+          "event": "арест и ссылка, 1948–1952",
+          "city": "Магадан, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.545696, 150.856918]
-      },
-      "properties": {
-        "event": "арест и ссылка, 1948–1952",
-        "city": "Магадан, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Давид Бергельсон (1884–1952)",
+      "description": "Давид Бергельсон (1884–1952) — еврейский писатель, родился в Украине, но большую часть жизни провел за границей, в частности, в Германии и Польше. В 1934 году вернулся в СССР, где в 1949 году был арестован за участие в Еврейском антифашистском комитете. Расстрелян в 1952 году. Реабилитирован посмертно в 1955 году​​.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fc4442a965ef7e38a_dav-ber.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Давид Бергельсон (1884–1952)",
-    "description": "Давид Бергельсон (1884–1952) — еврейский писатель, родился в Украине, но большую часть жизни провел за границей, в частности, в Германии и Польше. В 1934 году вернулся в СССР, где в 1949 году был арестован за участие в Еврейском антифашистском комитете. Расстрелян в 1952 году. Реабилитирован посмертно в 1955 году​​.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fc4442a965ef7e38a_dav-ber.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [50.4501, 30.5234],
-          [52.5200, 13.4050],
-          [48.8566, 2.3522],
-          [55.7558, 37.6173]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [50.4501, 30.5234],
+            [52.5200, 13.4050],
+            [48.8566, 2.3522],
+            [55.7558, 37.6173]
+          ]
+        },
+        "properties": {
+          "routeId": "route-5"
+        }
       },
-      "properties": {
-        "routeId": "route-5"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.4501, 30.5234]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [50.4501, 30.5234]
+        },
+        "properties": {
+          "event": "место рождения, 1891",
+          "city": "Киев, Российская империя"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1891",
-        "city": "Киев, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.5200, 13.4050]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.5200, 13.4050]
+        },
+        "properties": {
+          "event": "эмиграция в 1921",
+          "city": "Берлин, Германия"
+        }
       },
-      "properties": {
-        "event": "эмиграция в 1921",
-        "city": "Берлин, Германия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.8566, 2.3522]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [48.8566, 2.3522]
+        },
+        "properties": {
+          "event": "переезд в 1925",
+          "city": "Париж, Франция"
+        }
       },
-      "properties": {
-        "event": "переезд в 1925",
-        "city": "Париж, Франция"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "возвращение в 1940",
+          "city": "Москва, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение в 1940",
-        "city": "Москва, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Илья Эренбург (1891–1967)",
+      "description": "Илья Эренбург (1891–1967) — писатель и журналист, родился в Киеве. Эмигрировал в 1921 году в Европу, жил в Париже, Берлине и других городах. В 1940 году вернулся в СССР, где продолжал писать и публиковаться. Его работы пользовались популярностью, и он не подвергался репрессиям в отличие от многих других еврейских писателей​​.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fbdf7903b6bb74018_ilya-ere.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Илья Эренбург (1891–1967)",
-    "description": "Илья Эренбург (1891–1967) — писатель и журналист, родился в Киеве. Эмигрировал в 1921 году в Европу, жил в Париже, Берлине и других городах. В 1940 году вернулся в СССР, где продолжал писать и публиковаться. Его работы пользовались популярностью, и он не подвергался репрессиям в отличие от многих других еврейских писателей​​.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fbdf7903b6bb74018_ilya-ere.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [50.3172, 29.0568],
-          [32.0853, 34.7818], 
-          [50.4501, 30.5234],
-          [55.7558, 37.6173],
-          [59.5682, 150.8026]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [50.3172, 29.0568],
+            [32.0853, 34.7818], 
+            [50.4501, 30.5234],
+            [55.7558, 37.6173],
+            [59.5682, 150.8026]
+          ]
+        },
+        "properties": {
+          "routeId": "route-6"
+        }
       },
-      "properties": {
-        "routeId": "route-6"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.3172, 29.0568]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [50.3172, 29.0568]
+        },
+        "properties": {
+          "event": "место рождения, 1889",
+          "city": "Коростышев, Российская империя"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1889",
-        "city": "Коростышев, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [32.0853, 34.7818]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [32.0853, 34.7818]
+        },
+        "properties": {
+          "event": "эмиграция в 1925",
+          "city": "Тель-Авив"
+        }
       },
-      "properties": {
-        "event": "эмиграция в 1925",
-        "city": "Тель-Авив"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.4501, 30.5234]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [50.4501, 30.5234]
+        },
+        "properties": {
+          "event": "возвращение в 1926",
+          "city": "Киев, СССР"
+        }
       },
-      "properties": {
-        "event": "возвращение в 1926",
-        "city": "Киев, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "арест в 1948",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "арест в 1948",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [59.5682, 150.8026]
+        },
+        "properties": {
+          "event": "арест и ссылка, 1949–1952",
+          "city": "Магадан, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.5682, 150.8026]
-      },
-      "properties": {
-        "event": "арест и ссылка, 1949–1952",
-        "city": "Магадан, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Давид Гофштейн (1889 — 1952)",
+      "description": "Давид Гофштейн (1889 — 1952) — еврейский поэт (писал на идише и иврите). В 1922–1924 гг. – участник литературной группы «Штром», в 1925 г. работал в мэрии Тель-Авива, в 1926 г. поселился в Киеве, жил в писательском доме Ролит, преподавал на режиссерском отделении еврейского факультета Театрального института; член ЕАК; с 1938 г. находился в разработке НКВД УССР по агентурному делу «Боевцы», арестован в Киеве 16.09.1948 и этапирован в Москву, в следственную часть по особо важным делам при МГБ СССР, расстрелян вместе с другими активистами ЕАК.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f4acec738c67d77c0_david-gof.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Давид Гофштейн (1889 — 1952)",
-    "description": "Давид Гофштейн (1889 — 1952) — еврейский поэт (писал на идише и иврите). В 1922–1924 гг. – участник литературной группы «Штром», в 1925 г. работал в мэрии Тель-Авива, в 1926 г. поселился в Киеве, жил в писательском доме Ролит, преподавал на режиссерском отделении еврейского факультета Театрального института; член ЕАК; с 1938 г. находился в разработке НКВД УССР по агентурному делу «Боевцы», арестован в Киеве 16.09.1948 и этапирован в Москву, в следственную часть по особо важным делам при МГБ СССР, расстрелян вместе с другими активистами ЕАК.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f4acec738c67d77c0_david-gof.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [42.8864, -78.8784],
-          [55.7558, 37.6173],
-          [59.5687, 150.8029],
-          [42.8864, -78.8784]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [42.8864, -78.8784],
+            [55.7558, 37.6173],
+            [59.5687, 150.8029],
+            [42.8864, -78.8784]
+          ]
+        },
+        "properties": {
+          "routeId": "route-7"
+        }
       },
-      "properties": {
-        "routeId": "route-7"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [42.8864, -78.8784]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [42.8864, -78.8784]
+        },
+        "properties": {
+          "event": "место рождения, 1916",
+          "city": "Буффало, США"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1916",
-        "city": "Буффало, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "переезд в 1935",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "переезд в 1935",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.5687, 150.8029]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [59.5687, 150.8029]
+        },
+        "properties": {
+          "event": "отправка в ГУЛАГ в 1938",
+          "city": "Магадан, СССР"
+        }
       },
-      "properties": {
-        "event": "отправка в ГУЛАГ в 1938",
-        "city": "Магадан, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [42.8864, -78.8784]
+        },
+        "properties": {
+          "event": "возвращение в 1956",
+          "city": "Буффало, США"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [42.8864, -78.8784]
-      },
-      "properties": {
-        "event": "возвращение в 1956",
-        "city": "Буффало, США"
-      }
+    ],
+    "routeInfo": {
+      "title": "Томас Сговио (1916–1997)",
+      "description": "Американский художник Томас Сговио родился в США и в 1935 году переехал в СССР вслед за своим отцом-коммунистом. После попытки вернуть американское гражданство он был арестован НКВД и отправлен в ГУЛАГ в 1938 году. Сговио провел долгие годы в лагерях и вернулся в США только в 1956 году.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f99f3af9a2463b49f_thomas-sgo.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Томас Сговио (1916–1997)",
-    "description": "Американский художник Томас Сговио родился в США и в 1935 году переехал в СССР вслед за своим отцом-коммунистом. После попытки вернуть американское гражданство он был арестован НКВД и отправлен в ГУЛАГ в 1938 году. Сговио провел долгие годы в лагерях и вернулся в США только в 1956 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f99f3af9a2463b49f_thomas-sgo.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [40.7357, -74.1724],
-          [56.3269, 44.0059],
-          [55.7558, 37.6173],
-          [39.9526, -75.1652]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [40.7357, -74.1724],
+            [56.3269, 44.0059],
+            [55.7558, 37.6173],
+            [39.9526, -75.1652]
+          ]
+        },
+        "properties": {
+          "routeId": "route-8"
+        }
       },
-      "properties": {
-        "routeId": "route-8"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [40.7357, -74.1724]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.7357, -74.1724]
+        },
+        "properties": {
+          "event": "место рождения, 1907",
+          "city": "Ньюарк, США"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1907",
-        "city": "Ньюарк, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [56.3269, 44.0059]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [56.3269, 44.0059]
+        },
+        "properties": {
+          "event": "работа и жизнь с 1932",
+          "city": "Нижний Новгород, СССР"
+        }
       },
-      "properties": {
-        "event": "работа и жизнь с 1932",
-        "city": "Нижний Новгород, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "переезд в 1937",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "переезд в 1937",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [39.9526, -75.1652]
+        },
+        "properties": {
+          "event": "возвращение в 1980",
+          "city": "Филадельфия, США"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [39.9526, -75.1652]
-      },
-      "properties": {
-        "event": "возвращение в 1980",
-        "city": "Филадельфия, США"
-      }
+    ],
+    "routeInfo": {
+      "title": "Маргарет Ефремова (1907–2003)",
+      "description": "Маргарет Веттлин родилась в 1907 году в Ньюарке (США) и приехала в СССР в 1932 году, разочаровавшись в политике США. В СССР она вышла замуж за театрального режиссера Андрея Ефремова и занималась преподаванием английского языка и литературы. После смерти мужа она вернулась в США в 1980 году.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3af23f5380e28c_margaret-efr.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Маргарет Ефремова (1907–2003)",
-    "description": "Маргарет Веттлин родилась в 1907 году в Ньюарке (США) и приехала в СССР в 1932 году, разочаровавшись в политике США. В СССР она вышла замуж за театрального режиссера Андрея Ефремова и занималась преподаванием английского языка и литературы. После смерти мужа она вернулась в США в 1980 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f8a3af23f5380e28c_margaret-efr.jpg"
-  }
-},
+  },
   {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [43.6532, -79.3832],
-          [55.7558, 37.6173]
-        ]
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [43.6532, -79.3832],
+            [55.7558, 37.6173]
+          ]
+        },
+        "properties": {
+          "routeId": "route-9"
+        }
       },
-      "properties": {
-        "routeId": "route-9"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [43.6532, -79.3832]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [43.6532, -79.3832]
+        },
+        "properties": {
+          "event": "место рождения, 1918",
+          "city": "Торонто, Канада"
+        }
       },
-      "properties": {
-        "event": "место рождения, 1918",
-        "city": "Торонто, Канада"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "переезд в 1925",
+          "city": "Москва, СССР"
+        }
       },
-      "properties": {
-        "event": "переезд в 1925",
-        "city": "Москва, СССР"
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [55.7558, 37.6173]
+        },
+        "properties": {
+          "event": "смерть в 1977",
+          "city": "Москва, СССР"
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "смерть в 1977",
-        "city": "Москва, СССР"
-      }
+    ],
+    "routeInfo": {
+      "title": "Леон Закс (1918–1977)",
+      "description": "Леон Закс родился в Канаде в 1918 году в семье эмигрантов из Российской империи. В 1925 году его семья переехала в СССР, где Леон проявил свои музыкальные способности, став выдающимся скрипачом и педагогом. Он стал концертмейстером оркестра Большого театра и активно занимался преподаванием до своей смерти в 1977 году.",
+      "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f10ccba07c6541aa3_leon-sachs.jpg"
     }
-  ],
-  "routeInfo": {
-    "title": "Леон Закс (1918–1977)",
-    "description": "Леон Закс родился в Канаде в 1918 году в семье эмигрантов из Российской империи. В 1925 году его семья переехала в СССР, где Леон проявил свои музыкальные способности, став выдающимся скрипачом и педагогом. Он стал концертмейстером оркестра Большого театра и активно занимался преподаванием до своей смерти в 1977 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f10ccba07c6541aa3_leon-sachs.jpg"
-  }
-},{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [57.6261, 39.8845],
-          [51.5074, -0.1278],
-          [32.087647, 34.779338],
-          [55.7558, 37.6173]
-        ]
-      },
-      "properties": {
-        "routeId": "route-10"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [57.6261, 39.8845]
-      },
-      "properties": {
-        "event": "место рождения, 1917",
-        "city": "Ярославль, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.5074, -0.1278]
-      },
-      "properties": {
-        "event": "переезд в 1984",
-        "city": "Лондон, Великобритания"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [32.087647, 34.779338]
-      },
-      "properties": {
-        "event": "1987–1988",
-        "city": "Тель-Авив"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение в 1989",
-        "city": "Москва, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Юрий Любимов (1917–2014)",
-    "description": "Юрий Любимов (1917–2014) был известным советским и российским театральным режиссером, основателем и художественным руководителем Театра на Таганке. Он жил в Лондоне и Израиле, но вернулся в Россию в 1989 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f87bbd89e5c7d272a_aleksandr-sol.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [43.9133, 42.7208],
-          [44.5588, -72.5778],
-          [55.7558, 37.6173]
-        ]
-      },
-      "properties": {
-        "routeId": "route-11"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [43.9133, 42.7208]
-      },
-      "properties": {
-        "event": "место рождения, 1918",
-        "city": "Кисловодск, РСФСР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [44.5588, -72.5778]
-      },
-      "properties": {
-        "event": "переезд в 1976",
-        "city": "Вермонт, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение в 1994",
-        "city": "Москва, Россия"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Александр Солженицын (1918–2008)",
-    "description": "Александр Солженицын (1918–2008) — вероятно, самый известный советский реэмигрант. Русский писатель, драматург, политический и общественный деятель, лауреат Нобелевской премии по литературе. В 1945 году был арестован и провел восемь лет в лагерях ГУЛАГа. В 1974 году его выслали из СССР, и он жил в США, но в 1994 году вернулся в Россию.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f87bbd89e5c7d272a_aleksandr-sol.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [18.1096, -77.2975],
-          [42.3314, -83.0458],
-          [55.7558, 37.6173],
-          [41.2995, 69.2401],
-          [38.9072, -77.0369]
-        ]
-      },
-      "properties": {
-        "routeId": "route-12"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [18.1096, -77.2975]
-      },
-      "properties": {
-        "event": "место рождения, 1906",
-        "city": "Ямайка"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [42.3314, -83.0458]
-      },
-      "properties": {
-        "event": "переезд в 1924",
-        "city": "Детройт, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "переезд в 1930",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [41.2995, 69.2401]
-      },
-      "properties": {
-        "event": "во время Второй мировой войны",
-        "city": "Ташкент, Узбекистан"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [38.9072, -77.0369]
-      },
-      "properties": {
-        "event": "возвращение в 1976",
-        "city": "Вашингтон, США"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Роберт Робинсон (1906–1994)",
-    "description": "Роберт Робинсон, американский инженер, переехал в Советский Союз в 1930-х годах, чтобы избежать расовой дискриминации в США. Он работал в советской промышленности и прожил в СССР более 44 лет. Автобиография Робинсона в книге «Черный на красном» описывает его опыт в Советском Союзе.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f25199ec0146bf9f8_robert-rob.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [42.3314, -83.0458],
-          [56.2965, 43.9361],
-          [55.7558, 37.6173],
-          [34.0522, -118.2437]
-        ]
-      },
-      "properties": {
-        "routeId": "route-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [42.3314, -83.0458]
-      },
-      "properties": {
-        "event": "место рождения, 1915",
-        "city": "Детройт, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [56.2965, 43.9361]
-      },
-      "properties": {
-        "event": "переезд в 1931",
-        "city": "Горький (Нижний Новгород), СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "после освобождения и до 1976",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [34.0522, -118.2437]
-      },
-      "properties": {
-        "event": "возвращение в 1976",
-        "city": "Лос-Анджелес, США"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Виктор Герман (1915–1985)",
-    "description": "Виктор Герман — американец, который переехал в СССР в 1930-х годах вместе с семьей в составе американских рабочих, приехавших строить Горьковский автомобильный завод. Он стал известен как «Линдберг России» за установление советского рекорда по парашютным прыжкам, но позже стал жертвой сталинских чисток. Герман прожил в СССР 45 лет, из них 18 лет провел в советских лагерях прежде, чем вернуться в США в 1976 году. Виктор Герман написал и издал книгу «Серые люди», о жизни американцев в СССР.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf9604acec738c67d78c7_viktor-german.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [50.495139, 30.417290],
-          [46.434929, 30.740096],
-          [55.713546, 37.629820],
-          [48.872602, 2.370721],
-          [31.271150, 121.513120],
-          [40.667691, -73.958053],
-          [55.788187, 37.630582]
-        ]
-      },
-      "properties": {
-        "routeId": "route-14"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.495139, 30.417290]
-      },
-      "properties": {
-        "event": "место рождения, 1889",
-        "city": "Киев, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.434929, 30.740096]
-      },
-      "properties": {
-        "event": "провел часть своей молодости",
-        "city": "Одесса, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.713546, 37.629820]
-      },
-      "properties": {
-        "event": "переезд в 1913",
-        "city": "Москва, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.872602, 2.370721]
-      },
-      "properties": {
-        "event": "эмиграция в 1920",
-        "city": "Париж, Франция"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.271150, 121.513120]
-      },
-      "properties": {
-        "event": "1935–1943",
-        "city": "Шанхай, Китай"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [40.667691, -73.958053]
-      },
-      "properties": {
-        "event": "жил во время Второй мировой войны",
-        "city": "Нью-Йорк, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.788187, 37.630582]
-      },
-      "properties": {
-        "event": "вернулся в 1943",
-        "city": "Москва, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Александр Вертинский (1889–1957)",
-    "description": "Александр Вертинский (1889–1957) — выдающийся русский поэт, певец и актер, символ эпохи Серебряного века. Вертинский родился 21 марта 1889 года в Киеве. Жил и работал в Одессе, Петербурге, Париже и Берлине. В 1943 году приехал в СССР и обосновался в Москве.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fbdf7903b6bb73ff1_aleksandr-vert.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [45.765734, 126.676042],
-          [55.827874, 37.621581]
-        ]
-      },
-      "properties": {
-        "routeId": "route-15"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [45.765734, 126.676042]
-      },
-      "properties": {
-        "event": "место рождения",
-        "city": "Харбин, Китай"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.827874, 37.621581]
-      },
-      "properties": {
-        "event": "вернулись в 1947",
-        "city": "Москва, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Григорий (1911–1975) и Танкред (1931–2015) Голенпольские",
-    "description": "Григорий и Танкред Голенпольские реэмигрировали из Китая в СССР в 1947 году. Григорий был арестован, но позже агентурное дело было закрыто. Танкред Голенпольский работал журналистом и переводчиком, известен переводами Артура Миллера и созданием первой в СССР еврейской газеты.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f67cb0b7780f0c29f_golenpolski.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [46.446135, 30.716582],
-          [32.080021, 34.880147],
-          [45.856447, 38.715309],
-          [58.4498, 92.1703],
-          [46.4825, 30.7233],
-          [50.4724, 30.4739]
-        ]
-      },
-      "properties": {
-        "routeId": "route-16"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.446135, 30.716582]
-      },
-      "properties": {
-        "event": "место рождения, 1897",
-        "city": "Одесса, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [32.080021, 34.880147]
-      },
-      "properties": {
-        "event": "весна 1925",
-        "city": "Петах-Тиква, Палестина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [45.856447, 38.715309]
-      },
-      "properties": {
-        "event": "возвращение, 1927",
-        "city": "СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [58.4498, 92.1703]
-      },
-      "properties": {
-        "event": "период ссылки",
-        "city": "Енисейск, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.4825, 30.7233]
-      },
-      "properties": {
-        "event": "после ссылки",
-        "city": "Юг Украины, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.4724, 30.4739]
-      },
-      "properties": {
-        "event": "смерть, 1938",
-        "city": "Киев, СССР (Лукьяновская тюрьма)"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Моше Вайсбейн (1897–1938)",
-    "description": "Моше Вайсбейн, также известный как Соломон Кофман-Выгодский, был одним из руководителей Сионистско-социалистической партии. Был арестован, эмигрировал, возвращался в СССР, арестовывался повторно, умер в Лукьяновской тюрьме в 1938 году.",
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [53.0615, 32.8481],
-          [58.0105, 56.2294],
-          [46.9481, 7.4474],
-          [51.5346, 46.0342],
-          [45.776012, 126.620412],
-          [44.5839, 131.0969],
-          [58.0409, 61.4766],
-          [47.5563, 67.7277],
-          [49.8062, 73.0858],
-          [31.0461, 34.8516]
-        ]
-      },
-      "properties": {
-        "routeId": "route-17"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [53.0615, 32.8481]
-      },
-      "properties": {
-        "event": "место рождения, 1885",
-        "city": "Мглин, Россия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [58.0105, 56.2294]
-      },
-      "properties": {
-        "event": "окончание гимназии, 1903",
-        "city": "Пермь, Россия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.9481, 7.4474]
-      },
-      "properties": {
-        "event": "учеба в университете, 1904–1908",
-        "city": "Берн, Швейцария"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.5346, 46.0342]
-      },
-      "properties": {
-        "event": "1908",
-        "city": "Поволжье, Россия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [45.776012, 126.620412]
-      },
-      "properties": {
-        "event": "1912–1945",
-        "city": "Харбин, Китай"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [44.5839, 131.0969]
-      },
-      "properties": {
-        "event": "1945",
-        "city": "Гродеково, Россия (Приморский край)"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [58.0409, 61.4766]
-      },
-      "properties": {
-        "event": "ИТЛ, Азанка",
-        "city": "Азанка, Свердловская область, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [47.5563, 67.7277]
-      },
-      "properties": {
-        "event": "ИТЛ, Кенгир",
-        "city": "Кенгир, Казахстан"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [49.8062, 73.0858]
-      },
-      "properties": {
-        "event": "освобождение и поселение, 1956",
-        "city": "Караганда, Казахстан"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.0461, 34.8516]
-      },
-      "properties": {
-        "event": "эмиграция, 1961",
-        "city": "Израиль"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Абрам Кауфман (1885–1971)",
-    "description": "Абрам Иосифович Кауфман — врач, один из основателей сионистского движения в Китае, автор мемуаров и работ по истории еврейских общин Дальнего Востока. Он был председателем Харбинской еврейской общины, арестован в 1945 году и приговорен к 25 годам. В 1961 году эмигрировал в Израиль.",
-  }
-},
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [31.261202, 121.511589],
-          [54.978146, 73.430479],
-          [48.295578, 25.940927],
-          [32.777529, 34.979104]
-        ]
-      },
-      "properties": {
-        "routeId": "route-18"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.261202, 121.511589]
-      },
-      "properties": {
-        "event": "место рождения и юности",
-        "city": "Шанхай, Китай"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.978146, 73.430479]
-      },
-      "properties": {
-        "event": "эмиграция в 1940-х",
-        "city": "Омск, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.295578, 25.940927]
-      },
-      "properties": {
-        "event": "арестован в 1948",
-        "city": "Черновцы, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [32.777529, 34.979104]
-      },
-      "properties": {
-        "event": "предположительная репатриация",
-        "city": "Израиль"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Бернард Витензон (?–2018)",
-    "description": "Бернард Соломонович Витензон родился в Шанхае. В 1940-х годах эмигрировал в СССР и был арестован в 1948 году за антисоветскую деятельность. Предположительно репатриировался в Израиль.",
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [45.7567, 126.6424],
-          [54.978146, 73.430479],
-          [48.295578, 25.940927]
-        ]
-      },
-      "properties": {
-        "routeId": "route-19"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [45.7567, 126.6424]
-      },
-      "properties": {
-        "event": "место рождения",
-        "city": "Харбин, Китай"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.978146, 73.430479]
-      },
-      "properties": {
-        "event": "репатриация",
-        "city": "Омск, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.295578, 25.940927]
-      },
-      "properties": {
-        "event": "арестован в 1948",
-        "city": "Черновцы, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Борис Абрамович Шорник (1884–?) и Александр Борисович Шорник (1920–?)",
-    "description": "Реэмигранты из Харбина, арестованы в 1948 году за антисоветскую деятельность. Судьба после ареста неизвестна.",
-  }
-},
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [48.4390, 22.7179],
-          [48.8529, 2.3430],
-          [49.8996, 28.5813],
-          [46.6034, 1.8883]
-        ]
-      },
-      "properties": {
-        "routeId": "route-20"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.4390, 22.7179]
-      },
-      "properties": {
-        "event": "место рождения, 1922",
-        "city": "Мукачево, Украина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.8529, 2.3430]
-      },
-      "properties": {
-        "event": "учеба в Сорбонне, 1937",
-        "city": "Париж, Франция"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [49.8996, 28.5813]
-      },
-      "properties": {
-        "event": "жительство после отбытия наказания",
-        "city": "Бердичев, Украина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.6034, 1.8883]
-      },
-      "properties": {
-        "event": "возвращение во Францию",
-        "city": "Франция"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Морис Фридман (1922–2000)",
-    "description": "Морис Давидович Фридман родился в Мукачево и прожил в СССР после войны. Работал преподавателем, владел несколькими языками, и в 1980-х вернулся во Францию.",
-  }
-},
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [56.9496, 24.1052],
-          [59.9343, 30.3351],
-          [55.7558, 37.6173],
-          [52.5200, 13.4050],
-          [34.0922, -118.3228],
-          [55.7558, 37.6173]
-        ]
-      },
-      "properties": {
-        "routeId": "route-21"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [56.9496, 24.1052]
-      },
-      "properties": {
-        "event": "место рождения, 1898",
-        "city": "Рига, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.9343, 30.3351]
-      },
-      "properties": {
-        "event": "жизнь в Санкт-Петербурге, 1915",
-        "city": "Санкт-Петербург, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "жизнь в Москве, с 1920",
-        "city": "Москва, РСФСР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.5200, 13.4050]
-      },
-      "properties": {
-        "event": "работа в Берлине, 1926",
-        "city": "Берлин, Германия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [34.0922, -118.3228]
-      },
-      "properties": {
-        "event": "работа в Голливуде, 1930–1932",
-        "city": "Голливуд, США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение в СССР, с 1932 до смерти",
-        "city": "Москва, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Сергей Эйзенштейн (1898–1948)",
-    "description": "Сергей Эйзенштейн, выдающийся советский режиссер и теоретик кино. Работал за границей, включая Голливуд, и вернулся в СССР в 1932 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95fd198130b56e4cf6c_serhei-eis.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [54.4067, 32.4414],
-          [55.1904, 30.2049],
-          [49.8728, 8.6512],
-          [55.7558, 37.6173],
-          [52.5200, 13.4050],
-          [55.7558, 37.6173]
-        ]
-      },
-      "properties": {
-        "routeId": "route-22"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.4067, 32.4414]
-      },
-      "properties": {
-        "event": "рождение, 1890",
-        "city": "Починок, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.1904, 30.2049]
-      },
-      "properties": {
-        "event": "учеба, 1909",
-        "city": "Витебск, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [49.8728, 8.6512]
-      },
-      "properties": {
-        "event": "учеба, 1909-1914",
-        "city": "Дармштадт, Германия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "жизнь в 1920-е",
-        "city": "Москва, РСФСР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.5200, 13.4050]
-      },
-      "properties": {
-        "event": "жизнь в 1920-е",
-        "city": "Берлин, Германия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение и смерть в 1941",
-        "city": "Москва, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Эль Лисицкий (1890–1941)",
-    "description": "Эль Лисицкий — советский художник, архитектор и дизайнер, один из лидеров русского авангарда. Работал как в СССР, так и в Германии, внёс значительный вклад в супрематизм и конструктивизм.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f158581b9e10f8ca3_el-lis.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [55.7879, 49.1233],
-          [59.5675, 150.8114],
-          [55.7558, 37.6173],
-          [40.7128, -74.0060],
-          [55.7558, 37.6173]
-        ]
-      },
-      "properties": {
-        "routeId": "route-23"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7879, 49.1233]
-      },
-      "properties": {
-        "event": "рождение, 1932",
-        "city": "Казань, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.5675, 150.8114]
-      },
-      "properties": {
-        "event": "детство, 1930-е",
-        "city": "Магадан, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "с 1950-х",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [40.7128, -74.0060]
-      },
-      "properties": {
-        "event": "эмиграция в 1980",
-        "city": "США"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "возвращение в 2004",
-        "city": "Москва, Россия"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Василий Аксёнов (1932–2009)",
-    "description": "Василий Аксёнов — известный советский писатель, представитель шестидесятников. Эмигрировал в США в 1980 году, но вернулся в Россию в 2004 году.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f6991b32c718a428d_vasilii-aks.jpg"
-  }
-},
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [51.0056, 27.1164],
-          [-34.6037, -58.3816],
-          [50.8503, 4.3517],
-          [48.9226, 24.7097]
-        ]
-      },
-      "properties": {
-        "routeId": "route-24"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.0056, 27.1164]
-      },
-      "properties": {
-        "event": "рождение, 1921/1924",
-        "city": "Березно, Волынь, Украина (тогда Польша)"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.6037, -58.3816]
-      },
-      "properties": {
-        "event": "эмиграция в 1935",
-        "city": "Буэнос-Айрес, Аргентина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [50.8503, 4.3517]
-      },
-      "properties": {
-        "event": "приезд в Брюссель, 1947",
-        "city": "Брюссель, Бельгия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [48.9226, 24.7097]
-      },
-      "properties": {
-        "event": "переезд в 1949",
-        "city": "Станислав (Ивано-Франковск), Украина"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Давид Гендлер (1921/1924–1951)",
-    "description": "Давид Гендлер эмигрировал с семьей в Аргентину в 1935 году. В 1947 году он прибыл в Брюссель, затем в 1949 году вернулся в СССР, проживая в Станиславе.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95faf6eff9fd796d37f_david-gen.jpg"
-  }
-},
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [41.7151, 44.8271],
-          [41.6418, 41.6386],
-          [46.4825, 30.7233],
-          [32.7940, 34.9896],
-          [41.7151, 44.8271]
-        ]
-      },
-      "properties": {
-        "routeId": "route-25"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [41.7151, 44.8271]
-      },
-      "properties": {
-        "event": "рождение, 1896",
-        "city": "Тбилиси, Российская империя"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [41.6418, 41.6386]
-      },
-      "properties": {
-        "event": "1925",
-        "city": "Батуми, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [46.4825, 30.7233]
-      },
-      "properties": {
-        "event": "1925",
-        "city": "Одесса, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [32.7940, 34.9896]
-      },
-      "properties": {
-        "event": "1925–1926",
-        "city": "Хайфа, Палестина"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [41.7151, 44.8271]
-      },
-      "properties": {
-        "event": "возвращение, 1926",
-        "city": "Тбилиси, СССР"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Яков (Себи) Хананашвили (1896–1972)",
-    "description": "Яков Хананашвили был активным участником грузинского сионистского движения. В 1925 году эмигрировал в Палестину, но вернулся в СССР в 1926 году, где был арестован и отправлен в ГУЛАГ.",
-    "featuredImage": "https://cdn.prod.website-files.com/668d02c7633feda23293b5c5/670bf95f2853d2955e074cbc_sebi-haa.jpg"
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [54.6872, 25.2797],   // Вильно, Литва
-          [52.2978, 84.8709],   // Алтай, СССР
-          [51.7592, 19.4560],   // Лодзь, Польша
-          [31.0461, 34.8516],   // Израиль
-          [55.7558, 37.6173],   // Москва, СССР (1978–1989)
-          [53.4808, -2.2426],   // Манчестер, Англия
-          [55.7558, 37.6173]    // Москва, Россия (смерть, 2020)
-        ]
-      },
-      "properties": {
-        "routeId": "route-26"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.6872, 25.2797]
-      },
-      "properties": {
-        "event": "рождение, 1930",
-        "city": "Вильно, Литва"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.2978, 84.8709]
-      },
-      "properties": {
-        "event": "ссылка на поселение, 1941",
-        "city": "Алтай, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.7592, 19.4560]
-      },
-      "properties": {
-        "event": "проживание, 1946–1947",
-        "city": "Лодзь, Польша"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.0461, 34.8516]
-      },
-      "properties": {
-        "event": "участие в войне за независимость, 1948",
-        "city": "Израиль"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "программа культурного обмена, 1978–1989",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [53.4808, -2.2426]
-      },
-      "properties": {
-        "event": "научная работа и преподавание, 1989–2020",
-        "city": "Манчестер, Англия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "смерть, 2020",
-        "city": "Москва, Россия"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Теодор Шанин (1930–2020)",
-    "description": "Теодор Шанин — профессор, социолог, основатель Московской высшей школы социальных и экономических наук. Родился в Вильно, пережил ссылку на Алтай, воевал за независимость Израиля, работал в Англии и России, был одним из организаторов 'Шанинки'.",
-  }
-},
-  {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [54.6872, 25.2797],   // Вильно, Литва
-          [52.2978, 84.8709],   // Алтай, СССР
-          [51.7592, 19.4560],   // Лодзь, Польша
-          [31.0461, 34.8516],   // Израиль
-          [55.7558, 37.6173],   // Москва, СССР (1978–1989)
-          [53.4808, -2.2426],   // Манчестер, Англия
-          [55.7558, 37.6173]    // Москва, Россия (смерть, 2020)
-        ]
-      },
-      "properties": {
-        "routeId": "route-26"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.6872, 25.2797]
-      },
-      "properties": {
-        "event": "рождение, 1930",
-        "city": "Вильно, Литва"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [52.2978, 84.8709]
-      },
-      "properties": {
-        "event": "ссылка на поселение, 1941",
-        "city": "Алтай, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [51.7592, 19.4560]
-      },
-      "properties": {
-        "event": "проживание, 1946–1947",
-        "city": "Лодзь, Польша"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.0461, 34.8516]
-      },
-      "properties": {
-        "event": "участие в войне за независимость, 1948",
-        "city": "Израиль"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "программа культурного обмена, 1978–1989",
-        "city": "Москва, СССР"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [53.4808, -2.2426]
-      },
-      "properties": {
-        "event": "научная работа и преподавание, 1989–2020",
-        "city": "Манчестер, Англия"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [55.7558, 37.6173]
-      },
-      "properties": {
-        "event": "смерть, 2020",
-        "city": "Москва, Россия"
-      }
-    }
-  ],
-  "routeInfo": {
-    "title": "Теодор Шанин (1930–2020)",
-    "description": "Теодор Шанин — профессор, социолог, основатель Московской высшей школы социальных и экономических наук. Родился в Вильно, пережил ссылку на Алтай, воевал за независимость Израиля, работал в Англии и России, был одним из организаторов 'Шанинки'.",
-  }
+  },
 }
 ]
