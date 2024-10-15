@@ -2790,6 +2790,109 @@
         "properties": {
           "routeId": "route-26"
         }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            25.2797,
+            54.6872
+          ]
+        },
+        "properties": {
+          "event": "рождение, 1930",
+          "city": "Вильно, Литва"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.8709,
+            52.2978
+          ]
+        },
+        "properties": {
+          "event": "ссылка на поселение, 1941",
+          "city": "Алтай, СССР"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            19.456,
+            51.7592
+          ]
+        },
+        "properties": {
+          "event": "проживание, 1946–1947",
+          "city": "Лодзь, Польша"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            34.8516,
+            31.0461
+          ]
+        },
+        "properties": {
+          "event": "участие в войне за независимость, 1948",
+          "city": "Израиль"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            37.6173,
+            55.7558
+          ]
+        },
+        "properties": {
+          "event": "программа культурного обмена, 1978–1989",
+          "city": "Москва, СССР"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.2426,
+            53.4808
+          ]
+        },
+        "properties": {
+          "event": "научная работа и преподавание, 1989–2020",
+          "city": "Манчестер, Англия"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            37.6173,
+            55.7558
+          ]
+        },
+        "properties": {
+          "event": "смерть, 2020",
+          "city": "Москва, Россия"
+        }
       }
-   }
+    ],
+    "routeInfo": {
+      "title": "Теодор Шанин (1930–2020)",
+      "description": "Теодор Шанин — профессор, социолог, основатель Московской высшей школы социальных и экономических наук. Родился в Вильно, пережил ссылку на Алтай, воевал за независимость Израиля, работал в Англии и России, был одним из организаторов 'Шанинки'."
+    }
+  }
 ]
